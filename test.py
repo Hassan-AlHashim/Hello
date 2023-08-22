@@ -8,7 +8,7 @@ def average():
     count = 0
     while True:
         try:
-            x = input("Enter a number: ")
+            x = input("Enter a number, write done when you're satisfied: ")
             if x == "done":
                 break
             else:
