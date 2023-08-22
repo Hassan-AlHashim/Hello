@@ -2,11 +2,20 @@ msg = "Hello World!!"
 print (msg)
 
 
-#a function that will ask for two numbers and then it will add them together and print the sum
-def add_two_numbers():
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-    avg = (num1 + num2)/2
-    print("The average is: ", avg)
-
-add_two_numbers()
+#a function that will ask as many numbers as possible and then it will add them together and print the average of the numbers
+def average():
+    total = 0
+    count = 0
+    while True:
+        try:
+            x = input("Enter a number: ")
+            if x == "done":
+                break
+            else:
+                total = total + int(x)
+                count = count + 1
+        except:
+            print("Invalid input")
+            continue
+    print(total/count)
+average()
