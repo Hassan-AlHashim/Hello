@@ -6,7 +6,7 @@ print (msg)
 def add_two_numbers():
     num1 = int(input("Enter the first number: "))
     num2 = int(input("Enter the second number: "))
-    sum = num1 + num2
-    print("The sum is: ", sum)
+    avg = (num1 + num2)/2
+    print("The average is: ", avg)
 
 add_two_numbers()
